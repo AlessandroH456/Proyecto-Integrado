@@ -1,173 +1,172 @@
-TextWindow.ForegroundColor = "Red"
+'TextWindow.ForegroundColor = "Red"
 'TextWindow.WriteLine ("Alessandro Heer")
 'TextWindow.WriteLine ("4to BACO B")
 
 GraphicsWindow.BackgroundColor = "Blue"
-
-
 GraphicsWindow.Height = "494"
 GraphicsWindow.Width = "320"
 
-
 GraphicsWindow.PenColor = "white"
 GraphicsWindow.DrawRectangle(9,155,313,340)
-
-
 GraphicsWindow.DrawRectangle(5,8,321,492)
-
-
 GraphicsWindow.CanResize = "No"
 
-'GraphicsWindow.CanResize = "No"
-
-caja= Controls.AddTextBox(17,50)
+caja = Controls.AddTextBox(17,50)
 Controls.SetSize(caja,300,60)
 
-cero = Controls.AddButton("0" 11,449)
+cero   = Controls.AddButton("0",11,449)
 Controls.SetSize(cero,62,40)
-punt = Controls.AddButton("." 73,449)
+punt   = Controls.AddButton(".",73,449)
 Controls.SetSize(punt,62,40)
-x10ala = Controls.AddButton("X10^𝑥" 135,449)
+x10ala = Controls.AddButton("X10^x",135,449)
 Controls.SetSize(x10ala,62,40)
-Ans = Controls.AddButton("ANS" 197,449)
-Controls.SetSize(ans,62,40)
-igual = Controls.AddButton("=",259,449)
+Ans    = Controls.AddButton("ANS",197,449)
+Controls.SetSize(Ans,62,40)
+igual  = Controls.AddButton("=",259,449)
 Controls.SetSize(igual,62,40)
 
-uno = Controls.AddButton("1" 11,409)
+uno   = Controls.AddButton("1",11,409)
 Controls.SetSize(uno,62,40)
-dos = Controls.AddButton("2" 73,409)
+dos   = Controls.AddButton("2",73,409)
 Controls.SetSize(dos,62,40)
-tres = Controls.AddButton("3" 135,409)
+tres  = Controls.AddButton("3",135,409)
 Controls.SetSize(tres,62,40)
-mas = Controls.AddButton("+" 197,409)
+mas   = Controls.AddButton("+",197,409)
 Controls.SetSize(mas,62,40)
-menos = Controls.AddButton("-" 259,409)
+menos = Controls.AddButton("-",259,409)
 Controls.SetSize(menos,62,40)
 
-cuatro= Controls.AddButton("4" 11,369)
+cuatro = Controls.AddButton("4",11,369)
 Controls.SetSize(cuatro,62,40)
-cinco= Controls.AddButton("5" 73,369)
+cinco  = Controls.AddButton("5",73,369)
 Controls.SetSize(cinco,62,40)
-seis= Controls.AddButton("6" 135,369)
+seis   = Controls.AddButton("6",135,369)
 Controls.SetSize(seis,62,40)
-por= Controls.AddButton("X" 197,369)
+por    = Controls.AddButton("X",197,369)
 Controls.SetSize(por,62,40)
-Div= Controls.AddButton("/" 259,369)
+Div    = Controls.AddButton("/",259,369)
 Controls.SetSize(Div,62,40)
 
-siete= Controls.AddButton("7" 11,329)
+siete = Controls.AddButton("7",11,329)
 Controls.SetSize(siete,62,40)
-ocho= Controls.AddButton("8" 73,329)
+ocho  = Controls.AddButton("8",73,329)
 Controls.SetSize(ocho,62,40)
-nuev= Controls.AddButton("9" 135,329)
+nuev  = Controls.AddButton("9",135,329)
 Controls.SetSize(nuev,62,40)
-Del= Controls.AddButton("DEL" 197,329)
-Controls.SetSize(DEL,62,40)
-AC= Controls.AddButton("AC" 259,329)
+Del   = Controls.AddButton("DEL",197,329)
+Controls.SetSize(Del,62,40)
+AC    = Controls.AddButton("AC",259,329)
 Controls.SetSize(AC,62,40)
 
-RCL= Controls.AddButton("RCL" 11,291)
+RCL  = Controls.AddButton("RCL",11,291)
 Controls.SetSize(RCL,50,30)
-ENG= Controls.AddButton("ENG" 62,291)
+ENG  = Controls.AddButton("ENG",62,291)
 Controls.SetSize(ENG,50,30)
-pare= Controls.AddButton("(" 113,291)
+pare  = Controls.AddButton("(",113,291)
 Controls.SetSize(pare,50,30)
-pare2= Controls.AddButton(")" 164,291)
+pare2 = Controls.AddButton(")",164,291)
 Controls.SetSize(pare2,50,30)
-SD= Controls.AddButton("S↔D" 216,291)
+SD   = Controls.AddButton("S<>D",216,291)
 Controls.SetSize(SD,50,30)
-M= Controls.AddButton("M+" 267,291)
+M    = Controls.AddButton("M+",  267,291)
 Controls.SetSize(M,50,30)
-menosenpare= Controls.AddButton("(-)" 11,259)
+
+menosenpare = Controls.AddButton("(-)",11,259)
 Controls.SetSize(menosenpare,50,30)
-varias= Controls.AddButton(",,," 62,259)
+varias      = Controls.AddButton(",,,",62,259)
 Controls.SetSize(varias,50,30)
-hipe= Controls.AddButton("hyp" 113,259)
+hipe        = Controls.AddButton("hyp",113,259)
 Controls.SetSize(hipe,50,30)
-seno= Controls.AddButton("Sin" 164,259)
+seno        = Controls.AddButton("Sin",164,259)
 Controls.SetSize(seno,50,30)
-coseno= Controls.AddButton("Cos" 216,259)
+coseno      = Controls.AddButton("Cos",216,259)
 Controls.SetSize(coseno,50,30)
-Tangente= Controls.AddButton("Tan" 267,259)
+Tangente    = Controls.AddButton("Tan", 267,259)
 Controls.SetSize(Tangente,50,30)
-fraxi= Controls.AddButton("a/b" 11,225)
+
+fraxi      = Controls.AddButton("a/b",11,225)
 Controls.SetSize(fraxi,50,30)
-raiz= Controls.AddButton("√(𝑥)" 62,225)
+raiz       = Controls.AddButton("√(x)",62,225)
 Controls.SetSize(raiz,50,30)
-cuadrado= Controls.AddButton("𝑥^2" 113,225)
+cuadrado   = Controls.AddButton("x^2",113,225)
 Controls.SetSize(cuadrado,50,30)
-raiz2= Controls.AddButton("𝑥^a" 164,225)
+raiz2      = Controls.AddButton("x^a",164,225)
 Controls.SetSize(raiz2,50,30)
-logaritmo= Controls.AddButton("Log" 216,225)
+logaritmo  = Controls.AddButton("Log",216,225)
 Controls.SetSize(logaritmo,50,30)
-logaritmoN= Controls.AddButton("ln" 267,225)
+logaritmoN = Controls.AddButton("ln",267,225)
 Controls.SetSize(logaritmoN,50,30)
-clac= Controls.AddButton("CALC" 11,191)
+
+clac     = Controls.AddButton("CALC",11,191)
 Controls.SetSize(clac,50,30)
-nose= Controls.AddButton("d/dx" 62,191)
+nose     = Controls.AddButton("d/dx",62,191)
 Controls.SetSize(nose,50,30)
-
-mover= Controls.AddButton("" 113,170)
+mover    = Controls.AddButton("",113,170)
 Controls.SetSize(mover,102,50)
-
-equismen= Controls.AddButton("x-1" 216,191)
+equismen = Controls.AddButton("x-1",216,191)
 Controls.SetSize(equismen,50,30)
-logaritmo2= Controls.AddButton("LogaB" 267,191)
+logaritmo2 = Controls.AddButton("LogaB",267,191)
 Controls.SetSize(logaritmo2,50,30)
 
+btnLin  = Controls.AddButton("Lin",   11,163)
+Controls.SetSize(btnLin,95,25)
+btnQuad = Controls.AddButton("Quad", 113,163)
+Controls.SetSize(btnQuad,95,25)
+btnSis  = Controls.AddButton("Sis",  216,163)
+Controls.SetSize(btnSis,95,25)
 
-
-valor1 = 0
+valor1    = 0
 operacion = ""
 
 Controls.ButtonClicked = boton
 
-Sub boton 
+Sub boton
   ultimo_boton = Controls.LastClickedButton
-  
-  If ultimo_boton = cero Then 
+
+  ' --- Dígitos ---
+  If ultimo_boton = cero Then
     Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "0"))
-  ElseIf ultimo_boton = uno then 
+  ElseIf ultimo_boton = uno Then
     Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "1"))
-  ElseIf ultimo_boton = dos then 
+  ElseIf ultimo_boton = dos Then
     Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "2"))
-  ElseIf ultimo_boton = tres then 
+  ElseIf ultimo_boton = tres Then
     Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "3"))
-  ElseIf ultimo_boton = cuatro then 
+  ElseIf ultimo_boton = cuatro Then
     Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "4"))
-  ElseIf ultimo_boton = cinco then 
+  ElseIf ultimo_boton = cinco Then
     Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "5"))
-  ElseIf ultimo_boton = seis then 
+  ElseIf ultimo_boton = seis Then
     Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "6"))
-  ElseIf ultimo_boton = siete then 
+  ElseIf ultimo_boton = siete Then
     Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "7"))
-  ElseIf ultimo_boton = ocho then 
+  ElseIf ultimo_boton = ocho Then
     Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "8"))
-  ElseIf ultimo_boton = nuev then 
+  ElseIf ultimo_boton = nuev Then
     Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "9"))
-  ElseIf ultimo_boton = punt then 
+  ElseIf ultimo_boton = punt Then
     Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "."))
-    
-  ElseIf ultimo_boton = mas then 
+
+  ' Operaciones básicas
+  ElseIf ultimo_boton = mas Then
     valor1 = Controls.GetTextBoxText(caja)
     operacion = "+"
     Controls.SetTextBoxText(caja, "")
-  ElseIf ultimo_boton = menos then 
+  ElseIf ultimo_boton = menos Then
     valor1 = Controls.GetTextBoxText(caja)
     operacion = "-"
     Controls.SetTextBoxText(caja, "")
-  ElseIf ultimo_boton = por then 
+  ElseIf ultimo_boton = por Then
     valor1 = Controls.GetTextBoxText(caja)
     operacion = "*"
     Controls.SetTextBoxText(caja, "")
-  ElseIf ultimo_boton = Div then 
+  ElseIf ultimo_boton = Div Then
     valor1 = Controls.GetTextBoxText(caja)
     operacion = "/"
     Controls.SetTextBoxText(caja, "")
-    
-  
-  ElseIf ultimo_boton = igual then 
+
+  ' Igual 
+  ElseIf ultimo_boton = igual Then
     valor2 = Controls.GetTextBoxText(caja)
     If operacion = "+" Then
       resultado = valor1 + valor2
@@ -179,16 +178,121 @@ Sub boton
       If valor2 <> 0 Then
         resultado = valor1 / valor2
       Else
-        resultado = "Error"
+        resultado = "Error: div/0"
       EndIf
     EndIf
     Controls.SetTextBoxText(caja, resultado)
-    
- 
-  ElseIf ultimo_boton = AC then 
-    valor1 = 0
+
+  ' AC 
+  ElseIf ultimo_boton = AC Then
+    valor1    = 0
     operacion = ""
     Controls.SetTextBoxText(caja, "")
+
+  ' ============================================
+  ' --- ECUACIÓN LINEAL:  ax + b = 0 ---
+  ' Solución: x = -b / a
+  ' ============================================
+  ElseIf ultimo_boton = btnLin Then
+    TextWindow.WriteLine("=== ECUACION LINEAL ===")
+    TextWindow.WriteLine("Forma: ax + b = 0")
+    TextWindow.Write("Ingresa a: ")
+    a_lin = TextWindow.ReadNumber()
+    TextWindow.Write("Ingresa b: ")
+    b_lin = TextWindow.ReadNumber()
+
+    If a_lin = 0 Then
+      TextWindow.WriteLine("Error: 'a' no puede ser 0 en lineal.")
+      Controls.SetTextBoxText(caja, "Error: a=0")
+    Else
+      x_lin = (-b_lin) / a_lin
+      TextWindow.WriteLine("Solucion: x = " + x_lin)
+      Controls.SetTextBoxText(caja, "x=" + x_lin)
+    EndIf
+    TextWindow.WriteLine("")
+    
+  ' ECUACIÓN CUADRÁTICA: ax² + bx + c = 0 
+  ' Discriminante D = b²- 4ac
+  ' x = (-b ± √D) / 2a
+  ElseIf ultimo_boton = btnQuad Then
+    TextWindow.WriteLine("=== ECUACION CUADRATICA ===")
+    TextWindow.WriteLine("Forma: ax^2 + bx + c = 0")
+    TextWindow.Write("Ingresa a: ")
+    a_q = TextWindow.ReadNumber()
+    TextWindow.Write("Ingresa b: ")
+    b_q = TextWindow.ReadNumber()
+    TextWindow.Write("Ingresa c: ")
+    c_q = TextWindow.ReadNumber()
+
+    If a_q = 0 Then
+      TextWindow.WriteLine("Error: 'a' no puede ser 0 en cuadratica.")
+      Controls.SetTextBoxText(caja, "Error: a=0")
+    Else
+      disc = (b_q * b_q) - (4 * a_q * c_q)
+
+      If disc > 0 Then
+        x1_q = ((-b_q) + Math.SquareRoot(disc)) / (2 * a_q)
+        x2_q = ((-b_q) - Math.SquareRoot(disc)) / (2 * a_q)
+        TextWindow.WriteLine("Discriminante: " + disc + " (dos raices reales)")
+        TextWindow.WriteLine("x1 = " + x1_q)
+        TextWindow.WriteLine("x2 = " + x2_q)
+        Controls.SetTextBoxText(caja, "x1=" + x1_q + " x2=" + x2_q)
+      ElseIf disc = 0 Then
+        x1_q = (-b_q) / (2 * a_q)
+        TextWindow.WriteLine("Discriminante: 0 (raiz doble)")
+        TextWindow.WriteLine("x = " + x1_q)
+        Controls.SetTextBoxText(caja, "x=" + x1_q)
+      Else
+        ' Raíces complejas: parte real e imaginaria
+        parteReal = (-b_q) / (2 * a_q)
+        parteImg  = Math.SquareRoot(-disc) / (2 * a_q)
+        TextWindow.WriteLine("Discriminante: " + disc + " (raices complejas)")
+        TextWindow.WriteLine("x1 = " + parteReal + " + " + parteImg + "i")
+        TextWindow.WriteLine("x2 = " + parteReal + " - " + parteImg + "i")
+        Controls.SetTextBoxText(caja, parteReal + "+-" + parteImg + "i")
+      EndIf
+    EndIf
+    TextWindow.WriteLine("")
+  ' --- SISTEMA DE ECUACIONES 2x2 ---
+  ' a1x + b1y = c1
+  ' a2x + b2y = c2
+
+  ElseIf ultimo_boton = btnSis Then
+    TextWindow.WriteLine("=== SISTEMA DE ECUACIONES 2x2 ===")
+    TextWindow.WriteLine("Forma: a1x + b1y = c1")
+    TextWindow.WriteLine("       a2x + b2y = c2")
+    TextWindow.WriteLine("-- Ecuacion 1 --")
+    TextWindow.Write("a1: ")
+    a1 = TextWindow.ReadNumber()
+    TextWindow.Write("b1: ")
+    b1 = TextWindow.ReadNumber()
+    TextWindow.Write("c1: ")
+    c1 = TextWindow.ReadNumber()
+    TextWindow.WriteLine("-- Ecuacion 2 --")
+    TextWindow.Write("a2: ")
+    a2 = TextWindow.ReadNumber()
+    TextWindow.Write("b2: ")
+    b2 = TextWindow.ReadNumber()
+    TextWindow.Write("c2: ")
+    c2 = TextWindow.ReadNumber()
+
+    det = (a1 * b2) - (a2 * b1)
+
+    If det = 0 Then
+      TextWindow.WriteLine("Sin solucion unica (det=0): sistema incompatible o dependiente.")
+      Controls.SetTextBoxText(caja, "Sin sol. unica")
+    Else
+      det_x = (c1 * b2) - (c2 * b1)
+      det_y = (a1 * c2) - (a2 * c1)
+      x_sis = det_x / det
+      y_sis = det_y / det
+      TextWindow.WriteLine("Solucion:")
+      TextWindow.WriteLine("x = " + x_sis)
+      TextWindow.WriteLine("y = " + y_sis)
+      Controls.SetTextBoxText(caja, "x=" + x_sis + " y=" + y_sis)
+    EndIf
+    TextWindow.WriteLine("")
+
   EndIf
-  EndSub
+EndSub
   
