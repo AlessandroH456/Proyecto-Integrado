@@ -1,31 +1,28 @@
-'TextWindow.ForegroundColor = "Red"
+TextWindow.ForegroundColor = "Red"
 'TextWindow.WriteLine ("Alessandro Heer")
 'TextWindow.WriteLine ("4to BACO B")
 
 GraphicsWindow.BackgroundColor = "Blue"
 
-'' Tamaño
+
 GraphicsWindow.Height = "494"
 GraphicsWindow.Width = "320"
 
-'' Borde de teclado
 
 GraphicsWindow.PenColor = "white"
-
 GraphicsWindow.DrawRectangle(9,155,313,340)
 
-''Tamaño de Borde
 
 GraphicsWindow.DrawRectangle(5,8,321,492)
 
-''No Maximizar
 
 GraphicsWindow.CanResize = "No"
 
-''Visor de Número
+'GraphicsWindow.CanResize = "No"
+
 caja= Controls.AddTextBox(17,50)
 Controls.SetSize(caja,300,60)
-''Línea 1
+
 cero = Controls.AddButton("0" 11,449)
 Controls.SetSize(cero,62,40)
 punt = Controls.AddButton("." 73,449)
@@ -36,7 +33,7 @@ Ans = Controls.AddButton("ANS" 197,449)
 Controls.SetSize(ans,62,40)
 igual = Controls.AddButton("=",259,449)
 Controls.SetSize(igual,62,40)
-''Línea 2
+
 uno = Controls.AddButton("1" 11,409)
 Controls.SetSize(uno,62,40)
 dos = Controls.AddButton("2" 73,409)
@@ -47,7 +44,7 @@ mas = Controls.AddButton("+" 197,409)
 Controls.SetSize(mas,62,40)
 menos = Controls.AddButton("-" 259,409)
 Controls.SetSize(menos,62,40)
-''Línea 3
+
 cuatro= Controls.AddButton("4" 11,369)
 Controls.SetSize(cuatro,62,40)
 cinco= Controls.AddButton("5" 73,369)
@@ -58,7 +55,7 @@ por= Controls.AddButton("X" 197,369)
 Controls.SetSize(por,62,40)
 Div= Controls.AddButton("/" 259,369)
 Controls.SetSize(Div,62,40)
-''Línea 4
+
 siete= Controls.AddButton("7" 11,329)
 Controls.SetSize(siete,62,40)
 ocho= Controls.AddButton("8" 73,329)
@@ -69,7 +66,7 @@ Del= Controls.AddButton("DEL" 197,329)
 Controls.SetSize(DEL,62,40)
 AC= Controls.AddButton("AC" 259,329)
 Controls.SetSize(AC,62,40)
-''Línea 1 parte 2
+
 RCL= Controls.AddButton("RCL" 11,291)
 Controls.SetSize(RCL,50,30)
 ENG= Controls.AddButton("ENG" 62,291)
@@ -121,158 +118,77 @@ Controls.SetSize(logaritmo2,50,30)
 
 
 
-
+valor1 = 0
+operacion = ""
 
 Controls.ButtonClicked = boton
 
-operadorSuma = 0
-operadorResta = 0
-operadorMulti = 0
-operadorDiv = 0
-
 Sub boton 
   ultimo_boton = Controls.LastClickedButton
-  If ultimo_boton= cero Then 
-    boton1()
-  ElseIf ultimo_boton = punt then 
-    boton2()
-  ElseIf ultimo_boton = x10ala then 
-    boton3()
-  ElseIf ultimo_boton = Ans then 
-    boton4()
-  ElseIf ultimo_boton = igual then 
-    boton5()
+  
+  If ultimo_boton = cero Then 
+    Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "0"))
   ElseIf ultimo_boton = uno then 
-    boton6()
+    Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "1"))
   ElseIf ultimo_boton = dos then 
-    boton7()
+    Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "2"))
   ElseIf ultimo_boton = tres then 
-    boton8()
-  ElseIf ultimo_boton = mas then 
-    boton9()
-  ElseIf ultimo_boton = menos then 
-    boton10()
+    Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "3"))
   ElseIf ultimo_boton = cuatro then 
-    boton11()
+    Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "4"))
   ElseIf ultimo_boton = cinco then 
-    boton12()
+    Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "5"))
   ElseIf ultimo_boton = seis then 
-    boton13()
-  ElseIf ultimo_boton = por then 
-    boton14()
-  ElseIf ultimo_boton = Div then 
-    boton15()
+    Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "6"))
   ElseIf ultimo_boton = siete then 
-    boton16()
+    Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "7"))
   ElseIf ultimo_boton = ocho then 
-    boton17()
+    Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "8"))
   ElseIf ultimo_boton = nuev then 
-    boton18()
-  ElseIf ultimo_boton = Del then 
-    boton19()
+    Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "9"))
+  ElseIf ultimo_boton = punt then 
+    Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "."))
+    
+  ElseIf ultimo_boton = mas then 
+    valor1 = Controls.GetTextBoxText(caja)
+    operacion = "+"
+    Controls.SetTextBoxText(caja, "")
+  ElseIf ultimo_boton = menos then 
+    valor1 = Controls.GetTextBoxText(caja)
+    operacion = "-"
+    Controls.SetTextBoxText(caja, "")
+  ElseIf ultimo_boton = por then 
+    valor1 = Controls.GetTextBoxText(caja)
+    operacion = "*"
+    Controls.SetTextBoxText(caja, "")
+  ElseIf ultimo_boton = Div then 
+    valor1 = Controls.GetTextBoxText(caja)
+    operacion = "/"
+    Controls.SetTextBoxText(caja, "")
+    
+  
+  ElseIf ultimo_boton = igual then 
+    valor2 = Controls.GetTextBoxText(caja)
+    If operacion = "+" Then
+      resultado = valor1 + valor2
+    ElseIf operacion = "-" Then
+      resultado = valor1 - valor2
+    ElseIf operacion = "*" Then
+      resultado = valor1 * valor2
+    ElseIf operacion = "/" Then
+      If valor2 <> 0 Then
+        resultado = valor1 / valor2
+      Else
+        resultado = "Error"
+      EndIf
+    EndIf
+    Controls.SetTextBoxText(caja, resultado)
+    
+ 
   ElseIf ultimo_boton = AC then 
-    boton20()
+    valor1 = 0
+    operacion = ""
+    Controls.SetTextBoxText(caja, "")
   EndIf
-EndSub
-
-Sub boton1
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "0"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton2
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "."
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton3
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "X10^𝑥"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton4
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "ANS"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton5
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "="
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton6
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "1"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton7
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "2"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton8
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "3"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton9
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "+"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton10
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "-"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton11
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "4"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton12
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "5"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton13
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "6"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton14
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "X"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton15
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "/"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton16
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "7"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton17
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "8"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton18
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "9"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton19
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "DEL"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
-Sub boton20
-  contenido_caja = Controls.GetTextBoxText(caja)
-  numero = "AC"
-  Controls.SetTextBoxText(caja,text.Append(contenido_caja,numero))
-EndSub
+  EndSub
   
