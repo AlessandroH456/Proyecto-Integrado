@@ -14,106 +14,99 @@ GraphicsWindow.CanResize = "No"
 caja = Controls.AddTextBox(17,50)
 Controls.SetSize(caja,300,60)
 
-cero   = Controls.AddButton("0",11,449)
+cero   = Controls.AddButton("0",      11,449)
 Controls.SetSize(cero,62,40)
-punt   = Controls.AddButton(".",73,449)
+punt   = Controls.AddButton(".",      73,449)
 Controls.SetSize(punt,62,40)
-x10ala = Controls.AddButton("X10^x",135,449)
+x10ala = Controls.AddButton("X10^x", 135,449)
 Controls.SetSize(x10ala,62,40)
-Ans    = Controls.AddButton("ANS",197,449)
+Ans    = Controls.AddButton("ANS",   197,449)
 Controls.SetSize(Ans,62,40)
-igual  = Controls.AddButton("=",259,449)
+igual  = Controls.AddButton("=",     259,449)
 Controls.SetSize(igual,62,40)
-
-uno   = Controls.AddButton("1",11,409)
+uno   = Controls.AddButton("1",  11,409)
 Controls.SetSize(uno,62,40)
-dos   = Controls.AddButton("2",73,409)
+dos   = Controls.AddButton("2",  73,409)
 Controls.SetSize(dos,62,40)
-tres  = Controls.AddButton("3",135,409)
+tres  = Controls.AddButton("3", 135,409)
 Controls.SetSize(tres,62,40)
-mas   = Controls.AddButton("+",197,409)
+mas   = Controls.AddButton("+", 197,409)
 Controls.SetSize(mas,62,40)
-menos = Controls.AddButton("-",259,409)
+menos = Controls.AddButton("-", 259,409)
 Controls.SetSize(menos,62,40)
-
-cuatro = Controls.AddButton("4",11,369)
+cuatro = Controls.AddButton("4",  11,369)
 Controls.SetSize(cuatro,62,40)
-cinco  = Controls.AddButton("5",73,369)
+cinco  = Controls.AddButton("5",  73,369)
 Controls.SetSize(cinco,62,40)
-seis   = Controls.AddButton("6",135,369)
+seis   = Controls.AddButton("6", 135,369)
 Controls.SetSize(seis,62,40)
-por    = Controls.AddButton("X",197,369)
+por    = Controls.AddButton("X", 197,369)
 Controls.SetSize(por,62,40)
-Div    = Controls.AddButton("/",259,369)
+Div    = Controls.AddButton("/", 259,369)
 Controls.SetSize(Div,62,40)
-
-siete = Controls.AddButton("7",11,329)
+siete = Controls.AddButton("7",    11,329)
 Controls.SetSize(siete,62,40)
-ocho  = Controls.AddButton("8",73,329)
+ocho  = Controls.AddButton("8",    73,329)
 Controls.SetSize(ocho,62,40)
-nuev  = Controls.AddButton("9",135,329)
+nuev  = Controls.AddButton("9",   135,329)
 Controls.SetSize(nuev,62,40)
-Del   = Controls.AddButton("DEL",197,329)
+Del   = Controls.AddButton("DEL", 197,329)
 Controls.SetSize(Del,62,40)
-AC    = Controls.AddButton("AC",259,329)
+AC    = Controls.AddButton("AC",  259,329)
 Controls.SetSize(AC,62,40)
 
-RCL  = Controls.AddButton("RCL",11,291)
+RCL   = Controls.AddButton("RCL",   11,291)
 Controls.SetSize(RCL,50,30)
-ENG  = Controls.AddButton("ENG",62,291)
+ENG   = Controls.AddButton("ENG",   62,291)
 Controls.SetSize(ENG,50,30)
-pare  = Controls.AddButton("(",113,291)
+pare  = Controls.AddButton("(",    113,291)
 Controls.SetSize(pare,50,30)
-pare2 = Controls.AddButton(")",164,291)
+pare2 = Controls.AddButton(")",    164,291)
 Controls.SetSize(pare2,50,30)
-SD   = Controls.AddButton("S<>D",216,291)
+SD    = Controls.AddButton("S<>D", 216,291)
 Controls.SetSize(SD,50,30)
-M    = Controls.AddButton("M+",  267,291)
+M     = Controls.AddButton("M+",   267,291)
 Controls.SetSize(M,50,30)
-
-menosenpare = Controls.AddButton("(-)",11,259)
+menosenpare = Controls.AddButton("(-)",  11,259)
 Controls.SetSize(menosenpare,50,30)
-varias      = Controls.AddButton(",,,",62,259)
+varias      = Controls.AddButton(",,,",  62,259)
 Controls.SetSize(varias,50,30)
-hipe        = Controls.AddButton("hyp",113,259)
+hipe        = Controls.AddButton("hyp", 113,259)
 Controls.SetSize(hipe,50,30)
-seno        = Controls.AddButton("Sin",164,259)
+seno        = Controls.AddButton("Sin", 164,259)
 Controls.SetSize(seno,50,30)
-coseno      = Controls.AddButton("Cos",216,259)
+coseno      = Controls.AddButton("Cos", 216,259)
 Controls.SetSize(coseno,50,30)
 Tangente    = Controls.AddButton("Tan", 267,259)
 Controls.SetSize(Tangente,50,30)
-
-fraxi      = Controls.AddButton("a/b",11,225)
+fraxi      = Controls.AddButton("a/b",   11,225)
 Controls.SetSize(fraxi,50,30)
-raiz       = Controls.AddButton("√(x)",62,225)
+raiz       = Controls.AddButton("raiz",  62,225)
 Controls.SetSize(raiz,50,30)
-cuadrado   = Controls.AddButton("x^2",113,225)
+cuadrado   = Controls.AddButton("x^2",  113,225)
 Controls.SetSize(cuadrado,50,30)
-raiz2      = Controls.AddButton("x^a",164,225)
+raiz2      = Controls.AddButton("x^a",  164,225)
 Controls.SetSize(raiz2,50,30)
-logaritmo  = Controls.AddButton("Log",216,225)
+logaritmo  = Controls.AddButton("Log",  216,225)
 Controls.SetSize(logaritmo,50,30)
-logaritmoN = Controls.AddButton("ln",267,225)
+logaritmoN = Controls.AddButton("ln",   267,225)
 Controls.SetSize(logaritmoN,50,30)
-
-clac     = Controls.AddButton("CALC",11,191)
+clac       = Controls.AddButton("CALC",   11,191)
 Controls.SetSize(clac,50,30)
-nose     = Controls.AddButton("d/dx",62,191)
+nose       = Controls.AddButton("d/dx",   62,191)
 Controls.SetSize(nose,50,30)
-mover    = Controls.AddButton("",113,170)
-Controls.SetSize(mover,102,50)
-equismen = Controls.AddButton("x-1",216,191)
+mover      = Controls.AddButton("SE",    113,191)
+Controls.SetSize(mover,102,30)
+equismen   = Controls.AddButton("x-1",   216,191)
 Controls.SetSize(equismen,50,30)
-logaritmo2 = Controls.AddButton("LogaB",267,191)
+logaritmo2 = Controls.AddButton("LogaB", 267,191)
 Controls.SetSize(logaritmo2,50,30)
-
-btnLin  = Controls.AddButton("Lin",   11,163)
-Controls.SetSize(btnLin,95,25)
-btnQuad = Controls.AddButton("Quad", 113,163)
-Controls.SetSize(btnQuad,95,25)
-btnSis  = Controls.AddButton("Sis",  216,163)
-Controls.SetSize(btnSis,95,25)
+btnLin  = Controls.AddButton("Lin",   11,159)
+Controls.SetSize(btnLin,102,30)
+btnQuad = Controls.AddButton("Quad", 113,159)
+Controls.SetSize(btnQuad,102,30)
+btnSis  = Controls.AddButton("Sis",  216,159)
+Controls.SetSize(btnSis,102,30)
 
 valor1    = 0
 operacion = ""
@@ -123,7 +116,7 @@ Controls.ButtonClicked = boton
 Sub boton
   ultimo_boton = Controls.LastClickedButton
 
-  ' --- Dígitos ---
+  ' --- Digitos ---
   If ultimo_boton = cero Then
     Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "0"))
   ElseIf ultimo_boton = uno Then
@@ -147,7 +140,6 @@ Sub boton
   ElseIf ultimo_boton = punt Then
     Controls.SetTextBoxText(caja, Text.Append(Controls.GetTextBoxText(caja), "."))
 
-  ' Operaciones básicas
   ElseIf ultimo_boton = mas Then
     valor1 = Controls.GetTextBoxText(caja)
     operacion = "+"
@@ -164,8 +156,7 @@ Sub boton
     valor1 = Controls.GetTextBoxText(caja)
     operacion = "/"
     Controls.SetTextBoxText(caja, "")
-
-  ' Igual 
+    
   ElseIf ultimo_boton = igual Then
     valor2 = Controls.GetTextBoxText(caja)
     If operacion = "+" Then
@@ -183,38 +174,165 @@ Sub boton
     EndIf
     Controls.SetTextBoxText(caja, resultado)
 
-  ' AC 
+  ' --- AC ---
   ElseIf ultimo_boton = AC Then
     valor1    = 0
     operacion = ""
     Controls.SetTextBoxText(caja, "")
-
-  ' ============================================
-  ' --- ECUACIÓN LINEAL:  ax + b = 0 ---
-  ' Solución: x = -b / a
-  ' ============================================
+    
+  ' ECUACION LINEAL CON FRACCIONES
   ElseIf ultimo_boton = btnLin Then
-    TextWindow.WriteLine("=== ECUACION LINEAL ===")
-    TextWindow.WriteLine("Forma: ax + b = 0")
-    TextWindow.Write("Ingresa a: ")
-    a_lin = TextWindow.ReadNumber()
-    TextWindow.Write("Ingresa b: ")
-    b_lin = TextWindow.ReadNumber()
+    TextWindow.Clear()
+    TextWindow.WriteLine("== ECUACION LINEAL / FRACCIONES ==")
+    TextWindow.WriteLine("Forma: F1 +/- F2 = F3")
+    TextWindow.WriteLine("Cada fraccion: numerador y denominador")
+    TextWindow.WriteLine("")
+    TextWindow.WriteLine("-- Fraccion 1 (izquierda) --")
+    TextWindow.Write("Numerador   : ")
+    n1s = TextWindow.Read()
+    TextWindow.Write("Denominador : ")
+    d1s = TextWindow.Read()
+    TextWindow.WriteLine("")
+    TextWindow.Write("Signo entre F1 y F2 (+ o -): ")
+    op12 = TextWindow.Read()
+    TextWindow.WriteLine("")
+    TextWindow.WriteLine("-- Fraccion 2 (izquierda) --")
+    TextWindow.Write("Numerador   : ")
+    n2s = TextWindow.Read()
+    TextWindow.Write("Denominador : ")
+    d2s = TextWindow.Read()
+    TextWindow.WriteLine("")
+    TextWindow.WriteLine("-- Fraccion 3 (derecha del =) --")
+    TextWindow.Write("Numerador   : ")
+    n3s = TextWindow.Read()
+    TextWindow.Write("Denominador : ")
+    d3s = TextWindow.Read()
 
-    If a_lin = 0 Then
-      TextWindow.WriteLine("Error: 'a' no puede ser 0 en lineal.")
-      Controls.SetTextBoxText(caja, "Error: a=0")
+    pe_in = n1s
+    ParseExpr()
+    n1cx = pe_cx
+    n1k  = pe_k
+    pe_in = d1s
+    ParseExpr()
+    d1cx = pe_cx
+    d1k  = pe_k
+    pe_in = n2s
+    ParseExpr()
+    n2cx = pe_cx
+    n2k  = pe_k
+    pe_in = d2s
+    ParseExpr()
+    d2cx = pe_cx
+    d2k  = pe_k
+    pe_in = n3s
+    ParseExpr()
+    n3cx = pe_cx
+    n3k  = pe_k
+    pe_in = d3s
+    ParseExpr()
+    d3cx = pe_cx
+    d3k  = pe_k
+
+    s12 = 1
+    If op12 = "-" Then
+      s12 = -1
+    EndIf
+
+    If d1cx = 0 And d2cx = 0 And d3cx = 0 Then
+      aa = Math.Abs(d1k)
+      bb = Math.Abs(d2k)
+      CalcMCM()
+      mcm12 = mcm_r
+      aa = mcm12
+      bb = Math.Abs(d3k)
+      CalcMCM()
+      mcmT = mcm_r
+      m1 = mcmT / d1k
+      m2 = (mcmT / d2k) * s12
+      m3 = mcmT / d3k
+      cx_tot = (n1cx * m1) + (n2cx * m2) - (n3cx * m3)
+      k_tot  = (n1k  * m1) + (n2k  * m2) - (n3k  * m3)
+      TextWindow.WriteLine("")
+      TextWindow.WriteLine("MCM = " + mcmT)
+      TextWindow.WriteLine("Simplificado: (" + cx_tot + ")x + (" + k_tot + ") = 0")
+      If cx_tot = 0 Then
+        If k_tot = 0 Then
+          TextWindow.WriteLine("Resultado: Infinitas soluciones.")
+          Controls.SetTextBoxText(caja, "Inf. soluciones")
+        Else
+          TextWindow.WriteLine("Resultado: Sin solucion.")
+          Controls.SetTextBoxText(caja, "Sin solucion")
+        EndIf
+      Else
+        xr = (-k_tot) / cx_tot
+        TextWindow.WriteLine("x = " + xr)
+        Controls.SetTextBoxText(caja, "x=" + xr)
+      EndIf
     Else
-      x_lin = (-b_lin) / a_lin
-      TextWindow.WriteLine("Solucion: x = " + x_lin)
-      Controls.SetTextBoxText(caja, "x=" + x_lin)
+      ax1 = n1cx
+      bx1 = n1k
+      ax2 = d2cx
+      bx2 = d2k
+      MultExpr()
+      liz1_c2 = me_c2
+      liz1_c1 = me_c1
+      liz1_c0 = me_c0
+      ax1 = n2cx
+      bx1 = n2k
+      ax2 = d1cx
+      bx2 = d1k
+      MultExpr()
+      liz2_c2 = me_c2
+      liz2_c1 = me_c1
+      liz2_c0 = me_c0
+      ax1 = n3cx
+      bx1 = n3k
+      ax2 = d1cx
+      bx2 = d1k
+      MultExpr()
+      ldr_c2 = me_c2
+      ldr_c1 = me_c1
+      ldr_c0 = me_c0
+      fc2 = liz1_c2 + s12 * liz2_c2 - ldr_c2
+      fc1 = liz1_c1 + s12 * liz2_c1 - ldr_c1
+      fc0 = liz1_c0 + s12 * liz2_c0 - ldr_c0
+      TextWindow.WriteLine("")
+      If fc2 <> 0 Then
+        TextWindow.WriteLine("Ecuacion cuadratica:")
+        TextWindow.WriteLine("(" + fc2 + ")x^2 + (" + fc1 + ")x + (" + fc0 + ") = 0")
+        disc = fc1 * fc1 - 4 * fc2 * fc0
+        If disc < 0 Then
+          TextWindow.WriteLine("Sin solucion real.")
+          Controls.SetTextBoxText(caja, "Sin sol. real")
+        ElseIf disc = 0 Then
+          xr = (-fc1) / (2 * fc2)
+          TextWindow.WriteLine("x = " + xr)
+          Controls.SetTextBoxText(caja, "x=" + xr)
+        Else
+          xr1 = ((-fc1) + Math.SquareRoot(disc)) / (2 * fc2)
+          xr2 = ((-fc1) - Math.SquareRoot(disc)) / (2 * fc2)
+          TextWindow.WriteLine("x1=" + xr1 + "  x2=" + xr2)
+          Controls.SetTextBoxText(caja, "x1=" + xr1 + " x2=" + xr2)
+        EndIf
+      Else
+        TextWindow.WriteLine("Ecuacion lineal:")
+        TextWindow.WriteLine("(" + fc1 + ")x + (" + fc0 + ") = 0")
+        If fc1 = 0 Then
+          TextWindow.WriteLine("Sin solucion unica.")
+          Controls.SetTextBoxText(caja, "Sin sol. unica")
+        Else
+          xr = (-fc0) / fc1
+          TextWindow.WriteLine("x = " + xr)
+          Controls.SetTextBoxText(caja, "x=" + xr)
+        EndIf
+      EndIf
     EndIf
     TextWindow.WriteLine("")
-    
-  ' ECUACIÓN CUADRÁTICA: ax² + bx + c = 0 
-  ' Discriminante D = b²- 4ac
-  ' x = (-b ± √D) / 2a
+
+' ECUACION CUADRATICA
+
   ElseIf ultimo_boton = btnQuad Then
+    TextWindow.Clear()
     TextWindow.WriteLine("=== ECUACION CUADRATICA ===")
     TextWindow.WriteLine("Forma: ax^2 + bx + c = 0")
     TextWindow.Write("Ingresa a: ")
@@ -223,13 +341,11 @@ Sub boton
     b_q = TextWindow.ReadNumber()
     TextWindow.Write("Ingresa c: ")
     c_q = TextWindow.ReadNumber()
-
     If a_q = 0 Then
-      TextWindow.WriteLine("Error: 'a' no puede ser 0 en cuadratica.")
+      TextWindow.WriteLine("Error: a no puede ser 0.")
       Controls.SetTextBoxText(caja, "Error: a=0")
     Else
       disc = (b_q * b_q) - (4 * a_q * c_q)
-
       If disc > 0 Then
         x1_q = ((-b_q) + Math.SquareRoot(disc)) / (2 * a_q)
         x2_q = ((-b_q) - Math.SquareRoot(disc)) / (2 * a_q)
@@ -243,21 +359,20 @@ Sub boton
         TextWindow.WriteLine("x = " + x1_q)
         Controls.SetTextBoxText(caja, "x=" + x1_q)
       Else
-        ' Raíces complejas: parte real e imaginaria
         parteReal = (-b_q) / (2 * a_q)
         parteImg  = Math.SquareRoot(-disc) / (2 * a_q)
-        TextWindow.WriteLine("Discriminante: " + disc + " (raices complejas)")
+        TextWindow.WriteLine("Discriminante negativo (raices complejas)")
         TextWindow.WriteLine("x1 = " + parteReal + " + " + parteImg + "i")
         TextWindow.WriteLine("x2 = " + parteReal + " - " + parteImg + "i")
         Controls.SetTextBoxText(caja, parteReal + "+-" + parteImg + "i")
       EndIf
     EndIf
     TextWindow.WriteLine("")
-  ' --- SISTEMA DE ECUACIONES 2x2 ---
-  ' a1x + b1y = c1
-  ' a2x + b2y = c2
+
+  ' SISTEMA DE ECUACIONES 2x2
 
   ElseIf ultimo_boton = btnSis Then
+    TextWindow.Clear()
     TextWindow.WriteLine("=== SISTEMA DE ECUACIONES 2x2 ===")
     TextWindow.WriteLine("Forma: a1x + b1y = c1")
     TextWindow.WriteLine("       a2x + b2y = c2")
@@ -275,24 +390,437 @@ Sub boton
     b2 = TextWindow.ReadNumber()
     TextWindow.Write("c2: ")
     c2 = TextWindow.ReadNumber()
-
     det = (a1 * b2) - (a2 * b1)
-
     If det = 0 Then
-      TextWindow.WriteLine("Sin solucion unica (det=0): sistema incompatible o dependiente.")
+      TextWindow.WriteLine("Sin solucion unica (det=0).")
       Controls.SetTextBoxText(caja, "Sin sol. unica")
     Else
       det_x = (c1 * b2) - (c2 * b1)
       det_y = (a1 * c2) - (a2 * c1)
       x_sis = det_x / det
       y_sis = det_y / det
-      TextWindow.WriteLine("Solucion:")
       TextWindow.WriteLine("x = " + x_sis)
       TextWindow.WriteLine("y = " + y_sis)
       Controls.SetTextBoxText(caja, "x=" + x_sis + " y=" + y_sis)
     EndIf
     TextWindow.WriteLine("")
 
+
+' SUMATORIA DE ENERGIAS - CONSERVACION Eo=Ef
+
+  ElseIf ultimo_boton = mover Then
+    TextWindow.Clear()
+    TextWindow.WriteLine("================================")
+    TextWindow.WriteLine("  CONSERVACION DE ENERGIA")
+    TextWindow.WriteLine("         Eo = Ef")
+    TextWindow.WriteLine("  Ec=1/2mv^2  Eg=mgh  Ee=1/2kd^2")
+    TextWindow.WriteLine("================================")
+    TextWindow.WriteLine("Escribe x en el valor desconocido.")
+    TextWindow.WriteLine("Si una energia no aplica, pon 0")
+    TextWindow.WriteLine("en todos sus datos.")
+    TextWindow.WriteLine("")
+
+    ' --- ESTADO INICIAL ---
+    TextWindow.WriteLine("======== ESTADO INICIAL (Eo) ========")
+    TextWindow.WriteLine("-- Ec inicial: 1/2 * m * v^2 --")
+    TextWindow.Write("  Masa m (kg)      : ")
+    oi_ec_m = TextWindow.Read()
+    TextWindow.Write("  Velocidad v (m/s): ")
+    oi_ec_v = TextWindow.Read()
+    TextWindow.WriteLine("")
+    TextWindow.WriteLine("-- Eg inicial: m * g * h --")
+    TextWindow.Write("  Masa m (kg)  : ")
+    oi_eg_m = TextWindow.Read()
+    TextWindow.Write("  Altura h (m) : ")
+    oi_eg_h = TextWindow.Read()
+    TextWindow.WriteLine("")
+    TextWindow.WriteLine("-- Ee inicial: 1/2 * k * d^2 --")
+    TextWindow.Write("  Constante k (N/m)    : ")
+    oi_ee_k = TextWindow.Read()
+    TextWindow.Write("  Deformacion d (m)    : ")
+    oi_ee_d = TextWindow.Read()
+    TextWindow.WriteLine("")
+
+    ' --- ESTADO FINAL ---
+    TextWindow.WriteLine("======== ESTADO FINAL (Ef) ========")
+    TextWindow.WriteLine("-- Ec final: 1/2 * m * v^2 --")
+    TextWindow.Write("  Masa m (kg)      : ")
+    of_ec_m = TextWindow.Read()
+    TextWindow.Write("  Velocidad v (m/s): ")
+    of_ec_v = TextWindow.Read()
+    TextWindow.WriteLine("")
+    TextWindow.WriteLine("-- Eg final: m * g * h --")
+    TextWindow.Write("  Masa m (kg)  : ")
+    of_eg_m = TextWindow.Read()
+    TextWindow.Write("  Altura h (m) : ")
+    of_eg_h = TextWindow.Read()
+    TextWindow.WriteLine("")
+    TextWindow.WriteLine("-- Ee final: 1/2 * k * d^2 --")
+    TextWindow.Write("  Constante k (N/m)    : ")
+    of_ee_k = TextWindow.Read()
+    TextWindow.Write("  Deformacion d (m)    : ")
+    of_ee_d = TextWindow.Read()
+    TextWindow.WriteLine("")
+
+    g_val = 9.8
+
+    ' Detectar donde esta la incognita x
+    incog = ""
+    If oi_ec_m = "x" Then
+      incog = "oi_ec_m"
+    ElseIf oi_ec_v = "x" Then
+      incog = "oi_ec_v"
+    ElseIf oi_eg_m = "x" Then
+      incog = "oi_eg_m"
+    ElseIf oi_eg_h = "x" Then
+      incog = "oi_eg_h"
+    ElseIf oi_ee_k = "x" Then
+      incog = "oi_ee_k"
+    ElseIf oi_ee_d = "x" Then
+      incog = "oi_ee_d"
+    ElseIf of_ec_m = "x" Then
+      incog = "of_ec_m"
+    ElseIf of_ec_v = "x" Then
+      incog = "of_ec_v"
+    ElseIf of_eg_m = "x" Then
+      incog = "of_eg_m"
+    ElseIf of_eg_h = "x" Then
+      incog = "of_eg_h"
+    ElseIf of_ee_k = "x" Then
+      incog = "of_ee_k"
+    ElseIf of_ee_d = "x" Then
+      incog = "of_ee_d"
+    EndIf
+
+    ' Convertir todos los que NO son x a numero
+    If oi_ec_m <> "x" Then
+      n_oi_ec_m = oi_ec_m
+    EndIf
+    If oi_ec_v <> "x" Then
+      n_oi_ec_v = oi_ec_v
+    EndIf
+    If oi_eg_m <> "x" Then
+      n_oi_eg_m = oi_eg_m
+    EndIf
+    If oi_eg_h <> "x" Then
+      n_oi_eg_h = oi_eg_h
+    EndIf
+    If oi_ee_k <> "x" Then
+      n_oi_ee_k = oi_ee_k
+    EndIf
+    If oi_ee_d <> "x" Then
+      n_oi_ee_d = oi_ee_d
+    EndIf
+    If of_ec_m <> "x" Then
+      n_of_ec_m = of_ec_m
+    EndIf
+    If of_ec_v <> "x" Then
+      n_of_ec_v = of_ec_v
+    EndIf
+    If of_eg_m <> "x" Then
+      n_of_eg_m = of_eg_m
+    EndIf
+    If of_eg_h <> "x" Then
+      n_of_eg_h = of_eg_h
+    EndIf
+    If of_ee_k <> "x" Then
+      n_of_ee_k = of_ee_k
+    EndIf
+    If of_ee_d <> "x" Then
+      n_of_ee_d = of_ee_d
+    EndIf
+
+
+    ' Calcular los terminos conocidos de Eo y Ef
+    ' Todos los terminos conocidos de Eo van a un lado
+    ' Todos los terminos conocidos de Ef van al otro
+    ' El termino con x se despeja
+    '
+    ' Eo_conocido = suma de energias iniciales sin x
+    ' Ef_conocido = suma de energias finales sin x
+    '
+
+    ' Calcular Eo sin el termino que tiene x
+    Eo_calc = 0
+    If incog <> "oi_ec_m" And incog <> "oi_ec_v" Then
+      Eo_calc = Eo_calc + 0.5 * n_oi_ec_m * (n_oi_ec_v * n_oi_ec_v)
+    EndIf
+    If incog <> "oi_eg_m" And incog <> "oi_eg_h" Then
+      Eo_calc = Eo_calc + n_oi_eg_m * g_val * n_oi_eg_h
+    EndIf
+    If incog <> "oi_ee_k" And incog <> "oi_ee_d" Then
+      Eo_calc = Eo_calc + 0.5 * n_oi_ee_k * (n_oi_ee_d * n_oi_ee_d)
+    EndIf
+
+    ' Calcular Ef sin el termino que tiene x
+    Ef_calc = 0
+    If incog <> "of_ec_m" And incog <> "of_ec_v" Then
+      Ef_calc = Ef_calc + 0.5 * n_of_ec_m * (n_of_ec_v * n_of_ec_v)
+    EndIf
+    If incog <> "of_eg_m" And incog <> "of_eg_h" Then
+      Ef_calc = Ef_calc + n_of_eg_m * g_val * n_of_eg_h
+    EndIf
+    If incog <> "of_ee_k" And incog <> "of_ee_d" Then
+      Ef_calc = Ef_calc + 0.5 * n_of_ee_k * (n_of_ee_d * n_of_ee_d)
+    EndIf
+
+    TextWindow.WriteLine("================================")
+    TextWindow.WriteLine("Eo (sin incognita) = " + Eo_calc + " J")
+    TextWindow.WriteLine("Ef (sin incognita) = " + Ef_calc + " J")
+    TextWindow.WriteLine("")
+
+    If incog = "oi_ec_m" Then
+      Ec_x = Ef_calc - Eo_calc
+      div_v = 0.5 * (n_oi_ec_v * n_oi_ec_v)
+      If div_v = 0 Then
+        TextWindow.WriteLine("Error: velocidad inicial = 0.")
+        Controls.SetTextBoxText(caja, "Error: v=0")
+      Else
+        xr = Ec_x / div_v
+        TextWindow.WriteLine("Ec_inicial = Ef - Eo_resto = " + Ec_x + " J")
+        TextWindow.WriteLine("m = Ec / (0.5*v^2) = " + xr + " kg")
+        Controls.SetTextBoxText(caja, "m=" + xr + "kg")
+      EndIf
+
+    ElseIf incog = "oi_ec_v" Then
+      Ec_x = Ef_calc - Eo_calc
+      If n_oi_ec_m = 0 Then
+        TextWindow.WriteLine("Error: masa = 0.")
+        Controls.SetTextBoxText(caja, "Error: m=0")
+      ElseIf Ec_x < 0 Then
+        TextWindow.WriteLine("Error: Ec negativa, revisa los datos.")
+        Controls.SetTextBoxText(caja, "Error: Ec<0")
+      Else
+        v2 = Ec_x / (0.5 * n_oi_ec_m)
+        xr  = Math.SquareRoot(v2)
+        TextWindow.WriteLine("Ec_inicial = " + Ec_x + " J")
+        TextWindow.WriteLine("v = sqrt(2*Ec/m) = " + xr + " m/s")
+        Controls.SetTextBoxText(caja, "vo=" + xr + "m/s")
+      EndIf
+
+    ElseIf incog = "oi_eg_m" Then
+      Eg_x  = Ef_calc - Eo_calc
+      divgh = g_val * n_oi_eg_h
+      If divgh = 0 Then
+        TextWindow.WriteLine("Error: altura inicial = 0.")
+        Controls.SetTextBoxText(caja, "Error: h=0")
+      Else
+        xr = Eg_x / divgh
+        TextWindow.WriteLine("Eg_inicial = " + Eg_x + " J")
+        TextWindow.WriteLine("m = Eg / (g*h) = " + xr + " kg")
+        Controls.SetTextBoxText(caja, "m=" + xr + "kg")
+      EndIf
+
+    ElseIf incog = "oi_eg_h" Then
+      Eg_x  = Ef_calc - Eo_calc
+      divmg = n_oi_eg_m * g_val
+      If divmg = 0 Then
+        TextWindow.WriteLine("Error: masa = 0.")
+        Controls.SetTextBoxText(caja, "Error: m=0")
+      Else
+        xr = Eg_x / divmg
+        TextWindow.WriteLine("Eg_inicial = " + Eg_x + " J")
+        TextWindow.WriteLine("h = Eg / (m*g) = " + xr + " m")
+        Controls.SetTextBoxText(caja, "ho=" + xr + "m")
+      EndIf
+
+    ElseIf incog = "oi_ee_k" Then
+      Ee_x = Ef_calc - Eo_calc
+      divd = 0.5 * (n_oi_ee_d * n_oi_ee_d)
+      If divd = 0 Then
+        TextWindow.WriteLine("Error: deformacion = 0.")
+        Controls.SetTextBoxText(caja, "Error: d=0")
+      Else
+        xr = Ee_x / divd
+        TextWindow.WriteLine("Ee_inicial = " + Ee_x + " J")
+        TextWindow.WriteLine("k = Ee / (0.5*d^2) = " + xr + " N/m")
+        Controls.SetTextBoxText(caja, "k=" + xr + "N/m")
+      EndIf
+
+    ElseIf incog = "oi_ee_d" Then
+      Ee_x = Ef_calc - Eo_calc
+      If n_oi_ee_k = 0 Then
+        TextWindow.WriteLine("Error: k = 0.")
+        Controls.SetTextBoxText(caja, "Error: k=0")
+      ElseIf Ee_x < 0 Then
+        TextWindow.WriteLine("Error: Ee negativa, revisa los datos.")
+        Controls.SetTextBoxText(caja, "Error: Ee<0")
+      Else
+        d2 = Ee_x / (0.5 * n_oi_ee_k)
+        xr  = Math.SquareRoot(d2)
+        TextWindow.WriteLine("Ee_inicial = " + Ee_x + " J")
+        TextWindow.WriteLine("d = sqrt(2*Ee/k) = " + xr + " m")
+        Controls.SetTextBoxText(caja, "do=" + xr + "m")
+      EndIf
+
+    ' x en Ef → energia con x = Eo_calc - Ef_calc
+    ElseIf incog = "of_ec_m" Then
+      Ec_x = Eo_calc - Ef_calc
+      div_v = 0.5 * (n_of_ec_v * n_of_ec_v)
+      If div_v = 0 Then
+        TextWindow.WriteLine("Error: velocidad final = 0.")
+        Controls.SetTextBoxText(caja, "Error: v=0")
+      Else
+        xr = Ec_x / div_v
+        TextWindow.WriteLine("Ec_final = Eo - Ef_resto = " + Ec_x + " J")
+        TextWindow.WriteLine("m = Ec / (0.5*v^2) = " + xr + " kg")
+        Controls.SetTextBoxText(caja, "m=" + xr + "kg")
+      EndIf
+
+    ElseIf incog = "of_ec_v" Then
+      Ec_x = Eo_calc - Ef_calc
+      If n_of_ec_m = 0 Then
+        TextWindow.WriteLine("Error: masa = 0.")
+        Controls.SetTextBoxText(caja, "Error: m=0")
+      ElseIf Ec_x < 0 Then
+        TextWindow.WriteLine("Error: Ec negativa, revisa los datos.")
+        Controls.SetTextBoxText(caja, "Error: Ec<0")
+      Else
+        v2 = Ec_x / (0.5 * n_of_ec_m)
+        xr  = Math.SquareRoot(v2)
+        TextWindow.WriteLine("Ec_final = " + Ec_x + " J")
+        TextWindow.WriteLine("v = sqrt(2*Ec/m) = " + xr + " m/s")
+        Controls.SetTextBoxText(caja, "vf=" + xr + "m/s")
+      EndIf
+
+    ElseIf incog = "of_eg_m" Then
+      Eg_x  = Eo_calc - Ef_calc
+      divgh = g_val * n_of_eg_h
+      If divgh = 0 Then
+        TextWindow.WriteLine("Error: altura final = 0.")
+        Controls.SetTextBoxText(caja, "Error: h=0")
+      Else
+        xr = Eg_x / divgh
+        TextWindow.WriteLine("Eg_final = " + Eg_x + " J")
+        TextWindow.WriteLine("m = Eg / (g*h) = " + xr + " kg")
+        Controls.SetTextBoxText(caja, "m=" + xr + "kg")
+      EndIf
+
+    ElseIf incog = "of_eg_h" Then
+      Eg_x  = Eo_calc - Ef_calc
+      divmg = n_of_eg_m * g_val
+      If divmg = 0 Then
+        TextWindow.WriteLine("Error: masa = 0.")
+        Controls.SetTextBoxText(caja, "Error: m=0")
+      Else
+        xr = Eg_x / divmg
+        TextWindow.WriteLine("Eg_final = " + Eg_x + " J")
+        TextWindow.WriteLine("h = Eg / (m*g) = " + xr + " m")
+        Controls.SetTextBoxText(caja, "hf=" + xr + "m")
+      EndIf
+
+    ElseIf incog = "of_ee_k" Then
+      Ee_x = Eo_calc - Ef_calc
+      divd = 0.5 * (n_of_ee_d * n_of_ee_d)
+      If divd = 0 Then
+        TextWindow.WriteLine("Error: deformacion = 0.")
+        Controls.SetTextBoxText(caja, "Error: d=0")
+      Else
+        xr = Ee_x / divd
+        TextWindow.WriteLine("Ee_final = " + Ee_x + " J")
+        TextWindow.WriteLine("k = Ee / (0.5*d^2) = " + xr + " N/m")
+        Controls.SetTextBoxText(caja, "k=" + xr + "N/m")
+      EndIf
+
+    ElseIf incog = "of_ee_d" Then
+      Ee_x = Eo_calc - Ef_calc
+      If n_of_ee_k = 0 Then
+        TextWindow.WriteLine("Error: k = 0.")
+        Controls.SetTextBoxText(caja, "Error: k=0")
+      ElseIf Ee_x < 0 Then
+        TextWindow.WriteLine("Error: Ee negativa, revisa los datos.")
+        Controls.SetTextBoxText(caja, "Error: Ee<0")
+      Else
+        d2 = Ee_x / (0.5 * n_of_ee_k)
+        xr  = Math.SquareRoot(d2)
+        TextWindow.WriteLine("Ee_final = " + Ee_x + " J")
+        TextWindow.WriteLine("d = sqrt(2*Ee/k) = " + xr + " m")
+        Controls.SetTextBoxText(caja, "df=" + xr + "m")
+      EndIf
+
+    Else
+      ' Sin incognita: calcular y mostrar todo
+      Eo_total = Eo_calc
+      Ef_total = Ef_calc
+      TextWindow.WriteLine("Eo = " + Eo_total + " J")
+      TextWindow.WriteLine("Ef = " + Ef_total + " J")
+      If Math.Abs(Eo_total - Ef_total) < 0.001 Then
+        TextWindow.WriteLine("Se conserva la energia.")
+      Else
+        TextWindow.WriteLine("Diferencia: " + (Eo_total - Ef_total) + " J")
+      EndIf
+      Controls.SetTextBoxText(caja, "Eo=" + Eo_total + " Ef=" + Ef_total)
+    EndIf
+
+    TextWindow.WriteLine("")
+    TextWindow.WriteLine("================================")
+
   EndIf
+EndSub
+
+Sub ParseExpr
+  pe_cx = 0
+  pe_k  = 0
+  s  = pe_in
+  lg = Text.GetLength(s)
+  If lg > 0 Then
+    sg  = 1
+    ini = 1
+    c1  = Text.GetSubText(s, 1, 1)
+    If c1 = "-" Then
+      sg  = -1
+      ini = 2
+    ElseIf c1 = "+" Then
+      ini = 2
+    EndIf
+    s  = Text.GetSubText(s, ini, lg - ini + 1)
+    lg = Text.GetLength(s)
+    px = Text.GetIndexOf(s, "x")
+    If px = 0 Then
+      pe_k = sg * s
+    ElseIf px = 1 Then
+      pe_cx = sg
+      If lg > 1 Then
+        pe_k = sg * Text.GetSubText(s, 2, lg - 1)
+      EndIf
+    Else
+      cs = Text.GetSubText(s, 1, px - 1)
+      If cs = "-" Then
+        pe_cx = sg * (-1)
+      ElseIf cs = "+" Then
+        pe_cx = sg
+      Else
+        pe_cx = sg * cs
+      EndIf
+      If lg > px Then
+        pe_k = sg * Text.GetSubText(s, px + 1, lg - px)
+      EndIf
+    EndIf
+  EndIf
+EndSub
+
+' SUB CalcMCM
+
+Sub CalcMCM
+  x_e = aa
+  y_e = bb
+  While y_e <> 0
+    t_e = Math.Remainder(x_e, y_e)
+    x_e = y_e
+    y_e = t_e
+  EndWhile
+  If x_e = 0 Then
+    mcm_r = 0
+  Else
+    mcm_r = (aa * bb) / x_e
+  EndIf
+EndSub
+
+' SUB MultExpr
+
+Sub MultExpr
+  me_c2 = ax1 * ax2
+  me_c1 = ax1 * bx2 + bx1 * ax2
+  me_c0 = bx1 * bx2
 EndSub
   
